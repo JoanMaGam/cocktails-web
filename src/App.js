@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route exact path='/' element={<Home />} />
+        <Route index path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/cocktail/:id' element={<SingleCocktail />} />
         <Route path='*' element={<Error />} />
